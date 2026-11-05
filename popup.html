@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>0FluffCapture</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="config.js" defer></script>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <main class="popup">
+    <header class="header">
+      <div class="brand-mark" aria-hidden="true">0F</div>
+      <div>
+        <h1>0FluffCapture</h1>
+        <p class="subtitle">Save to your start page</p>
+      </div>
+    </header>
+
+    <section class="page-card" aria-label="Current page">
+      <span class="eyebrow">CURRENT PAGE</span>
+      <label class="field-label" for="page-title">Title</label>
+      <input id="page-title" class="text-input title-input" type="text" maxlength="50" autocomplete="off">
+      <p id="page-url" class="page-url"></p>
+    </section>
+
+    <section class="destination">
+      <label class="field-label" for="folder-select">Save in</label>
+      <select id="folder-select" class="text-input">
+        <option value="">No folder</option>
+      </select>
+
+      <label class="field-label new-folder-label" for="new-folder">Create a folder (optional)</label>
+      <input id="new-folder" class="text-input" type="text" maxlength="50" placeholder="New folder name" autocomplete="off">
+      <p class="hint">The new folder will be created inside the selected folder.</p>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <button id="save-button" class="save-button" type="button" disabled>Save page</button>
+    <footer>Private by design. Saved locally in 0FluffStart.</footer>
+  </main>
+</body>
+</html>
