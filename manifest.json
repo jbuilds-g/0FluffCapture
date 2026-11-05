@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "0FluffCapture",
+  "version": "0.1.0",
+  "description": "A lightweight browser extension for quickly saving the current tab to your 0FluffStart dashboard.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_title": "Save to 0FluffStart",
+    "default_popup": "popup.html"
+  }
+}
