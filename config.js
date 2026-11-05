@@ -1,6 +1,5 @@
-// Set the Chrome Web Store ID for 0FluffStart before Chrome testing.
-// Firefox uses the fixed Gecko ID from the main extension manifest.
+// Extension IDs for the installed 0FluffStart builds.
 const MAIN_EXTENSION_IDS = {
-  chrome: "",
+  chrome: "njjfhoikhnlfeeeegimeiknmmhmnalpb",
   firefox: "0fluffstart-v2@extension.local"
 };
